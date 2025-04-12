@@ -1,0 +1,45 @@
+header {
+    text-align: center;
+    background-color: #19191a;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+body {
+    background-color: #1D1D1F;
+}
+
+h1 {
+    color: #B0002C;
+}
+
+h2 {
+    color: #97002C;
+}
+
+div {
+    background-color: #19191a;
+    padding: 10px;
+    margin: 10px;
+    color: #F2F2F2;
+    border-radius: 20px;
+}
+
+b {
+    color: #501e7e;
+}
+
+.img {
+    border-radius: 20px;
+    margin-top: -100px;
+    height: 500px;
+}
+
+.introducao {
+    margin: 100px;
+}
+
+#paragrafo-footer {
+    text-align: center;
+}
