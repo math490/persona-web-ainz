@@ -1,4 +1,4 @@
 # persona-web-ainz
-\nAluno: Matheus Teles de Andrade
-\nTurma: 3ºB - Informática
-\nmain?
+Aluno: Matheus Teles de Andrade
+Turma: 3ºB - Informática
+main?
