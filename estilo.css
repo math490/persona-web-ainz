@@ -6,6 +6,10 @@ header {
     margin: 10px;
 }
 
+#subtitulo-header {
+    color: #8121da;
+}
+
 body {
     background-color: #1D1D1F;
 }
@@ -32,14 +36,33 @@ b {
 
 .img {
     border-radius: 20px;
-    margin-top: -100px;
+    margin-top: -120px;
     height: 500px;
+    box-shadow: 0 0 20px 10px rgba(58, 38, 104, 0.7);
 }
 
 .introducao {
-    margin: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/background-ainz.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.paragrafo-introducao {
+    background-color: rgba(0, 0, 0, 0.664);
+    font-size: 18px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #paragrafo-footer {
     text-align: center;
+    color: #8121da;
 }
