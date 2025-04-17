@@ -12,6 +12,8 @@ header {
 
 body {
     background-color: #1D1D1F;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
