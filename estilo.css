@@ -35,6 +35,11 @@ b {
 }
 
 .img {
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
     border-radius: 20px;
     margin-top: -120px;
     height: 500px;
