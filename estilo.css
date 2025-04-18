@@ -38,6 +38,7 @@ div {
     border-radius: 20px;
     box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
     border-left: #501e7e solid 8px;
+    border-right: #501e7e solid 8px;
 }
 
 b {
