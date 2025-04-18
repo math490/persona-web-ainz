@@ -37,7 +37,7 @@ div {
     color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
-    border-left: #501e7e solid 10px;
+    border-left: #501e7e solid 8px;
 }
 
 b {
@@ -54,7 +54,8 @@ b {
     margin-top: -120px;
     height: 500px;
     box-shadow: 0 0 20px 10px rgba(58, 38, 104, 0.7);
-    border: #501e7e double 5px;
+    border: #501e7e6b double 8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
 .introducao {
@@ -67,6 +68,7 @@ b {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    text-align: justify;
 }
 
 .paragrafo-introducao {
@@ -87,4 +89,9 @@ b {
 iframe {
     height: 500px;
     width: 100%;
+    border-radius: 20px;
+}
+
+a {
+    color: #8121da;
 }
