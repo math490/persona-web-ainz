@@ -12,22 +12,32 @@ header {
 
 body {
     background-color: #1D1D1F;
+    margin: 0;
+    padding: 0;
+    font-family: "Bona Nova SC", serif;
 }
 
-h1 {
+h1, .personagem {
     color: #B0002C;
+    font-family: "Amarante", serif;
+    font-size: 45px;
 }
 
 h2 {
     color: #97002C;
+    font-family: "Bona Nova SC", serif;
+    font-size: 27px;
+    margin-top: -20px;
 }
 
 div {
     background-color: #19191a;
     padding: 10px;
-    margin: 10px;
+    margin: 50px;
     color: #F2F2F2;
     border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
+    border-left: #501e7e solid 10px;
 }
 
 b {
@@ -35,14 +45,20 @@ b {
 }
 
 .img {
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
     border-radius: 20px;
     margin-top: -120px;
     height: 500px;
     box-shadow: 0 0 20px 10px rgba(58, 38, 104, 0.7);
+    border: #501e7e double 5px;
 }
 
 .introducao {
-    margin-top: 150px;
+    margin-top: 140px;
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
@@ -62,7 +78,13 @@ b {
     padding-right: 10px;
 }
 
-#paragrafo-footer {
+.rodape {
     text-align: center;
     color: #8121da;
+    padding: 30px;
+}
+
+iframe {
+    height: 500px;
+    width: 100%;
 }
