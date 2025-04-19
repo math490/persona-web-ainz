@@ -39,6 +39,7 @@ div {
     box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
     border-left: #501e7e solid 8px;
     border-right: #501e7e solid 8px;
+    text-align: justify;
 }
 
 b {
@@ -69,7 +70,6 @@ b {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    text-align: justify;
 }
 
 .paragrafo-introducao {
@@ -79,6 +79,7 @@ b {
     margin-right: -30px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify;
 }
 
 .rodape {
@@ -87,12 +88,17 @@ b {
     padding: 30px;
 }
 
-iframe {
+video {
     height: 500px;
-    width: 100%;
+    width: 53%;
+    border: #501e7e6b solid 2px;
     border-radius: 20px;
 }
 
+section {
+    text-align: center;
+}
+
 a {
-    color: #8121da;
+    color: #B0002C;
 }
