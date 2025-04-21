@@ -1,0 +1,61 @@
+.settings-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #settings-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 23px;
+    margin-left: -3px;
+    margin-top: -3px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #settings-toggle.rotate {
+    transform: rotate(90deg);
+  }
+  
+  #settings-menu {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 30;
+    width: 160px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  #settings-menu.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+  }
+  
+  #settings-menu .menu-item {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #settings-menu .menu-item:hover {
+    background: #8121da;
+    border-radius: 5px;
+  }

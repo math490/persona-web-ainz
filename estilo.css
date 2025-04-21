@@ -24,13 +24,13 @@ h1, .personagem {
 }
 
 h2 {
-    color: #97002C;
+    color: #B0002C;
     font-family: "Bona Nova SC", serif;
     font-size: 27px;
     margin-top: -20px;
 }
 
-div {
+.habilidades, .introducao, .caracteristicas, .historia, .curiosidades, footer {
     background-color: #19191a;
     padding: 10px;
     margin: 50px;
@@ -43,7 +43,7 @@ div {
 }
 
 b {
-    color: #501e7e;
+    color: #B0002C;
 }
 
 .img {
@@ -88,15 +88,9 @@ b {
     padding: 30px;
 }
 
-video {
-    height: 500px;
-    width: 53%;
-    border: #501e7e6b solid 2px;
-    border-radius: 20px;
-}
-
 section {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 a {

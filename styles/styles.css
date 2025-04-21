@@ -1,0 +1,357 @@
+.player {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+}
+
+#player:fullscreen,
+#player:-webkit-full-screen,
+#player:-moz-full-screen,
+#player:-ms-fullscreen {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.custom-context-menu {
+  position: fixed;
+  background: #222;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  padding: 8px 0;
+  display: none;
+  z-index: 9999;
+  width: 180px;
+}
+.custom-context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-context-menu li {
+  padding: 8px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-context-menu li:hover {
+  background: #8121da;
+}
+
+.custom-context-menu .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px 10px;
+  transition: opacity 0.3s;
+  opacity: 0;
+  background: rgba(34, 34, 34, 0);
+  box-sizing: border-box;
+}
+
+.player:hover .controls,
+.player.show-controls .controls {
+  opacity: 1;
+  background: rgba(34, 34, 34, 0.8);
+}
+
+.control-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.left-controls,
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls button,
+.controls input,
+.controls select {
+  background: none;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.material-icons {
+  font-size: 24px;
+}
+
+.volume-container {
+  position: relative;
+  width: 100px;
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.volume-bar {
+  position: absolute;
+  height: 100%;
+  background: #8121da;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  width: 50%; /* será atualizado dinamicamente pelo JS */
+}
+
+.volume-thumb {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #8121da;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%; /* será atualizado dinamicamente pelo JS */
+  cursor: pointer;
+}
+
+#timeDisplay {
+  min-width: 60px;
+  text-align: center;
+}
+
+.progress-container {
+  height: 8px;
+  background: #555;
+  cursor: pointer;
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  z-index: 2;
+}
+
+.progress {
+  background: #8121da;
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+}
+
+.progress-thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: #8121da;
+  border-radius: 50%;
+  pointer-events: none;
+  display: none;
+  z-index: 2;
+  transition: left 0.01s linear;
+}
+
+.progress-container:hover .progress-thumb {
+  display: block;
+}
+
+#play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  cursor: pointer;
+}
+
+#play-overlay span {
+  font-size: 65px;
+  color: #8121da;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.paused-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #8121da;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.paused-overlay::before {
+  content: "❚❚";
+  font-size: 25px;
+  color: #fff;
+}
+
+.speed-control {
+  position: relative;
+}
+
+.speed-control button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.speed-control button:focus {
+  background: none;
+  border: none;
+  color: #8121da;
+  cursor: pointer;
+}
+
+.speed-options {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  background-color: #222;
+  border-radius: 6px;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  width: 80px;
+  font-size: 14px;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.speed-options li {
+  padding: 6px 10px;
+  color: white;
+  transition: background 0.2s;
+}
+
+.speed-options li:hover {
+  background-color: #8121da;
+  border-radius: 5px;
+}
+
+.speed-options li.active {
+  font-weight: bold;
+  background-color: #8121da;
+  border-radius: 5px;
+}
+
+.speed-options.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+#download:focus {
+  color: #8121da;
+}
+
+.barrinha {
+  margin: 0;
+  margin-left: -15px;
+}
+
+.loop-active span {
+  border-radius: 5px;
+  color: #8121da;
+}
+
+.cc-active {
+  color: #8121da;
+}
+
+.player.hide-controls {
+  cursor: none;
+}
+
+.player.hide-controls .controls {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.controls.not-started {
+  display: none;
+}
+
+.seek-feedback-side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: #8121da;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 200;
+  text-align: center;
+}
+
+.seek-feedback-side.left {
+  left: 10%;
+}
+
+.seek-feedback-side.right {
+  right: 10%;
+}
+
+.seek-feedback-side .label {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.seek-feedback-side .arrows {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: -50px;
+}
+
+.material-symbols-outlined.arrows {
+  font-variation-settings: "FILL" 1;
+}
