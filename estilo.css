@@ -66,7 +66,7 @@ b {
     margin-left: 50px;
     margin-right: 50px;
     padding: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/background-ainz.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(src/img/background-ainz.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

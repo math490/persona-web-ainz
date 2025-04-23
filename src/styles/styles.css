@@ -219,9 +219,10 @@ video {
 }
 
 .paused-overlay::before {
-  content: "❚❚";
-  font-size: 25px;
+  content: "►";
+  font-size: 35px;
   color: #fff;
+  padding-left: 5px;
 }
 
 .speed-control {
