@@ -33,7 +33,7 @@ h2 {
 .habilidades, .introducao, .caracteristicas, .historia, .curiosidades, footer {
     background-color: #19191a;
     padding: 10px;
-    margin: 50px;
+    margin: 2.6%;
     color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
@@ -53,7 +53,7 @@ b {
 
 .img img {
     border-radius: 20px;
-    margin-top: -120px;
+    margin-top: -6%;
     height: 500px;
     box-shadow: 0 0 20px 10px rgba(58, 38, 104, 0.7);
     border: #501e7e6b double 8px;
@@ -61,25 +61,19 @@ b {
 }
 
 .introducao {
-    margin-top: 140px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 30px;
+    margin-top: 8.3%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(src/img/background-ainz.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 0;
 }
 
 .paragrafo-introducao {
     background-color: rgba(0, 0, 0, 0.664);
     font-size: 18px;
-    margin-left: -30px;
-    margin-right: -30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
+    padding: 0.5em;
+    margin-bottom: 2em;
 }
 
 .rodape {
