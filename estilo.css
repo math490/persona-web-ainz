@@ -1,9 +1,12 @@
 header {
     text-align: center;
     background-color: #19191a;
-    padding: 5px;
-    border-radius: 30px;
-    margin: 10px;
+    padding: 0.3em;
+    margin: 1% 2.6% 10% 2.6%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
+    border-left: #501e7e solid 8px;
+    border-right: #501e7e solid 8px;
 }
 
 #subtitulo-header {
@@ -33,7 +36,7 @@ h2 {
 .habilidades, .introducao, .caracteristicas, .historia, .curiosidades, footer {
     background-color: #19191a;
     padding: 10px;
-    margin: 2.6%;
+    margin: 2.6% 2.6% 3.5% 2.6%;
     color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
@@ -53,15 +56,15 @@ b {
 
 .img img {
     border-radius: 20px;
-    margin-top: -6%;
-    height: 500px;
+    margin-top: -4%;
+    height: 31.2em;
     box-shadow: 0 0 20px 10px rgba(58, 38, 104, 0.7);
     border: #501e7e6b double 8px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
 .introducao {
-    margin-top: 8.3%;
+    margin-top: 5%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(src/img/background-ainz.png);
     background-repeat: no-repeat;
     background-size: cover;
