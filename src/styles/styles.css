@@ -105,6 +105,10 @@ video {
   cursor: pointer;
 }
 
+.controls button:hover {
+  color: #8121da;
+}
+
 .material-icons {
   font-size: 24px;
 }

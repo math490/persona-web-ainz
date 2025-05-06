@@ -33,10 +33,22 @@ h2 {
     margin-top: -20px;
 }
 
-.habilidades, .introducao, .caracteristicas, .historia, .curiosidades, footer {
+.habilidades, .introducao, .caracteristicas, .historia, .curiosidades {
     background-color: #19191a;
     padding: 10px;
     margin: 2.6% 2.6% 3.5% 2.6%;
+    color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
+    border-left: #501e7e solid 8px;
+    border-right: #501e7e solid 8px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #19191a;
+    padding: 10px;
+    margin: 2%;
     color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 0 0 10px 5px rgba(42, 24, 83, 0.7);
